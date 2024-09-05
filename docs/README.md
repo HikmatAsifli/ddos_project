@@ -25,16 +25,16 @@ pip install -r requirements.txt
 To run the script, use the following command:
 
 ``` bash
-python ddos_test.py --target-ip <target_ip> --port <target_port> --packets <packet_count>
+python /src/main.py --ip <target_ip> --port <target_port> --count <packet_count>
 ```
 
 Replace <target_ip>, <target_port>, and <packet_count> with your desired target IP, port number, and the number of packets to send, respectively.
 
  ## Example
 ```bash
-python ddos_test.py --target-ip 192.168.1.1 --port 80 --packets 1000
+python /src/main.py -i 192.168.1.1 -p 80 -c 3000
 ```
-This command will send 1000 packets to the target IP 192.168.1.1 on port 80.
+This command will send 3000 packets to the target IP 192.168.1.1 on port 80.
 
 ## Important Considerations
 
